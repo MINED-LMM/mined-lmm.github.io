@@ -1,0 +1,1208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K19QDCVYV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0K19QDCVYV');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MINED: Probing and Updating with Multimodal Time-Sensitive Knowledge for Large Multimodal Models</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- Favicons --> 
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="MINED/logo/logo2_new.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+ 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Crimson+Text:italic|Neuton:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600|IM+Fell+English:italic|Amethysta:regular" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:700|IM+Fell+Double+Pica:italic|Ovo:regular" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500|Raleway:600|Frank+Ruhl+Libre:300" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
+  <!-- SEO Meta Tags -->
+  <title>MINED: Probing and Updating with Multimodal Time-Sensitive Knowledge for Large Multimodal Models & Large Multimodal Models | Multimodal Time-Sensitive Knowledge</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+
+
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="MINED: Probing and Updating with Multimodal Time-Sensitive Knowledge for Large Multimodal Models">
+  <meta property="og:description" content="">
+  <!-- <meta property="og:image" content="assets/img/header-logo.png"> -->
+  <meta property="og:image" content="EVOKE/img/header-logo.png">
+  <meta property="og:url" content="https://evoke-lmm.github.io/">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MINED: Probing and Updating with Multimodal Time-Sensitive Knowledge for Large Multimodal Models">
+  <meta name="twitter:description" content="">
+  <!-- <meta name="twitter:image" content="assets/img/header-logo.png"> -->
+  <meta property="og:image" content="EVOKE/img/header-logo.png">
+
+  
+
+  <!-- Additional SEO Meta Tags -->
+  <meta name="author" content="KORE Research Team">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kore-lmm.github.io/">
+  
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchProject",
+    "name": "KORE",
+    "description": "",
+    "url": "https://kore-lmm.github.io/",
+    "keywords": "",
+    "author": {
+      "@type": "Organization",
+      "name": "KORE Research Team"
+    }
+  }
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Anyar
+  * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <!-- <h1 class="sitename">Trust</h1> -->
+        <!-- <img src="assets/img/header-logo.png" class="img-fluid" id="logo-img"  alt=""> -->
+        <img src="MINED/logo/logo-header.png" class="img-fluid" id="logo-img"  alt="">
+
+        
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Explore</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#teaser">Teaser</a></li>
+              <li><a href="#introduction">Introduction</a></li> 
+              <li><a href="#mined">Multimodal tIme-seNsitive knowlEDge</a></li>
+              <li><a href="#probing">Probing Multimodal tIme-seNsitive knowlEDge</a></li>
+              <li><a href="#exploratory">Analysis of Exploratory Results</a></li>
+              <li><a href="#updating">Updating Multimodal tIme-seNsitive knowlEDge</a></li>
+              <li><a href="#examples">Qualitative Examples</a></li>
+              <li><a href="#templates">Chat Templates</a></li>
+              <li><a href="#team">Team</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="#about">Background</a></li> -->
+          <!-- <li><a href="#dimensions">Dimensions</a></li>
+          <li><a href="#models">Models</a></li>
+          <li><a href="#leaderboard">Leaderboard</a></li>
+          <li><a href="#discussion">Discussion</a></li> -->
+          <!-- <li><a href="https://trusteval-docs.readthedocs.io/">Docs</a></li> -->
+          <li><a href="">Slides</a></li>
+          <li><a href="">Github</a></li>
+          <li><a href="">Paper</a></li>
+          <li><a href="">Dataset</a></li>
+
+
+
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+     <!-- <div class="header-social-links">
+       <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+       <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
+<!--        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>-->
+<!--        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>-->
+  <!-- </div>  -->
+
+    </div>
+  </header> 
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="img-background-container"> <!-- 使用 class 而不是 id -->
+        <div class="img-background" id="background"></div>
+      </div>
+
+      
+      <!-- <video autoplay muted  playsinline preload="auto"  id="background-video">
+         <source src="assets/img/background-video - 02-4.mp4" type="video/mp4"> 
+        <source src="KORE/video/kore.mp4" type="video/mp4">
+        
+        Your browser does not support the video tag.
+      </video> -->
+
+
+      <div class="container" id="title-container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2 style="font-size: 60px;"><span>MINED</span></h2>
+            <h2 style="font-size: 38px;">Probing and Updating with Multimodal Time-Sensitive Knowledge for<br><span>Large Multimodal Models</span></h2>
+            <!-- <p style="font-size: 38px;">Knowledge-Oriented Augmentations and Constraints</p> -->
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <section id="teaser" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Teaser</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <p style="font-family: 'Raleway', sans-serif; font-size: 1.5em; text-align: center; font-weight: bold;">
+          "Temporal Awareness Evaluation, Comprehensive Benchmarking, and Multi-Dimensional Analysis!"
+        </p>
+        <p style="text-align: right; font-family: 'Raleway', sans-serif; font-size: 1.5em; font-weight: bold;">
+          – Multimodal Time-Sensitive Knowledge
+        </p>
+        <br>
+
+        <div class="text-center my-3">
+          <img src="MINED\img\overview.png" class="img-fluid my-1" alt="" style="width: 100%; height: auto;">
+        </div>
+        
+        <br><br>
+        
+        <!-- <div class="text-center my-3">
+          <img src="EVOKE/img/motivation.jpg" class="img-fluid my-2" alt="" style="width: 80%; height: auto;">
+        </div> -->
+        
+      </div>
+
+    </section><!-- /Teaser Section -->
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Introduction</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-10 my-4">
+          <div class="content col-xl-12 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+            <p style="font-size: 20px;">Large Multimodal Models (LMMs) encode rich factual knowledge via cross-modal pre-training, yet their static representations struggle to maintain an accurate understanding of time-sensitive factual knowledge. Existing benchmarks remain constrained by static designs, inadequately evaluating LMMs' ability to understand time-sensitive knowledge. To address this gap, we propose <span style="font-weight: bold; color: #2E7D32;">MINED</span>, a comprehensive benchmark that evaluates temporal awareness along <b>6</b> key dimensions and <b>11</b> challenging tasks: <b>cognition, awareness, trustworthiness, understanding, reasoning, and robustness</b>. MINED is constructed from Wikipedia by two professional annotators, containing <b>2,104</b> time-sensitive knowledge samples spanning six knowledge types. Evaluating 15 widely used LMMs on MINED shows that Gemini-2.5-Pro achieves the highest average CEM score of 63.07, while most open-source LMMs still lack time understanding ability. Meanwhile, LMMs perform best on organization knowledge, whereas their performance is weakest on sport. To address these challenges, we investigate the feasibility of updating time-sensitive knowledge in LMMs through knowledge editing methods and observe that LMMs can effectively update knowledge via knowledge editing methods in single editing scenarios.</p>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Introduction Section -->
+
+    <section id="mined" class="models section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Dynamic Benchmark</h2> -->
+        <h2><b>M</b>ultimodal t<b>I</b>me-se<b>N</b>sitive knowl<b>ED</b>ge </h2>
+        
+
+        
+        
+
+      </div><!-- End Section Title -->
+      <div class="row justify-content-center" data-aos="fade-up">
+
+        <div class="col-11">
+          <p style="font-size: 20px;"><span style="font-weight: bold; color: #2E7D32;">[Left]</span> Overall comparison with existing temporal knowledge benchmarks. <span style="font-weight: bold; color: #2E7D32;">[Right]</span> We evaluate temporal awareness of time-sensitive knowledge of SOTA LMMs across six capability dimensions.</p>
+
+          
+          
+
+        <div class="text-center my-5">
+            <img src="MINED\img\comparison.png" class="img-fluid" alt="" style="width: 100%; height: auto;">
+          
+        </div>
+
+        <p style="font-size: 20px;">In Table 2 and Figure 3, MINED comprises <span style="font-weight: bold; color: #2E7D32;">4,208 questions</span>, spanning <span style="font-weight: bold; color: #2E7D32;">6 dimensions</span> and <span style="font-weight: bold; color: #2E7D32;">6 types of fine-grained knowledge</span>, demonstrating substantial diversity.</p>
+
+        
+
+        <div class="text-center my-5">
+          <img src="MINED\img\statistic.png" class="img-fluid" alt="" style="width: 100%; height: auto;">
+        
+      </div>
+
+
+            </div>
+    
+      
+    </section>
+    
+
+    <section id="probing" class="models section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Dynamic Benchmark</h2> -->
+        <h2>Probing <b>M</b>ultimodal t<b>I</b>me-se<b>N</b>sitive knowl<b>ED</b>ge</h2>
+
+      </div><!-- End Section Title -->
+      <div class="row justify-content-center" data-aos="fade-up">
+
+        <div class="col-11">
+           <!-- <p style="font-size: 20px;">We observe that KORE-Augmentation augments the original knowledge into multi-rounds dialogues data <b>(forming the trunk)</b> and instruction tasks data <b>(forming the branches)</b>, thereby constructing a comprehensive and higher-level knowledge tree (Left part of Figure 3) that supports superior generalization and internalization of new knowledge. KORE-Augmentation moves beyond enabling models to accurately fit training data for &ldquo;data memorization&rdquo;. Instead, it focuses on helping the model comprehend and reason about the inherent logic and associations within the knowledge itself. This enables the model to think, internalize new knowledge, and effectively extract and manipulate the learned knowledge, thereby achieving real <span style="font-weight: bold; color: #2E7D32;">&ldquo;knowledge internalization&rdquo;</span>.</p> -->
+      
+          <div class="text-center my-1">
+            <img src="MINED\img\table3.png" class="img-fluid my-1" alt="" style="width: 100%; height: auto;">
+          </div>
+
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-12">
+                <div class="accordion" id="trustModelRules">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-bs-parent="#trustModelRules">
+                        Observation 1: LMMs exhibit improved cognitive performance when queries are framed as timestamp-aware task.
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#trustModelRules">
+                      <div class="accordion-body">
+                        When evaluating the cognitive capacities of LMMs, we present queries conveying identical knowledge in three distinct temporal formats: Time-Agnostic, Temporal Interval-Aware, and Timestamp-Aware. For the knowledge ``Lionel Messi played for Inter Miami CF", Time-Agnostic, Temporal Interval-Aware, and Timestamp-Aware queries are formulated as follows: ``Which club does the person in the image currently play for?", ``Which club did the footballer play for between 2023 and 2024?", and ``Which club did the footballer play for on 1 January 2024?", respectively. In Table 3, all LMMs perform better on Timestamp-Aware tasks. This phenomenon may stem from the narrower temporal context required: Timestamp-Aware queries only necessitate knowledge retrieval for a specific point in time, whereas Time-Agnostic and Temporal Interval-Aware tasks demand recalling broader or time period-based information, which is more challenging. Despite this, the top-performing model, Gemini-2.5-Pro, still fails to recall approximately 25% of the knowledge, underscoring the importance of temporal sensitivity in model reasoning.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-bs-parent="#trustModelRules">
+                        Observation 2: LMMs are vulnerable to temporal misaligned context, especially from past temporal misaligned contexts.
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#trustModelRules">
+                      <div class="accordion-body">
+                        Compared to T.S.A. results in Table 3, LMMs' performance degrades when queries are accompanied by temporal misaligned context, which impedes correct knowledge recall. For the experiment in Figure 7, we use the same timestamp in the queries, with the only difference being whether the input query included the relevant but temporal misaligned text. We Observationerve that more capable closed-source models and larger open-source models exhibit greater robustness to temporally misaligned context, whereas smaller open-source models suffer significant performance degradation. For instance, Qwen2-VL-I-7B shows declines of 43.84% on F.M.C and 56.43% on P.M.C. These results indicate that smaller models are more susceptible to misleading temporal context, with past misaligned information having a particularly strong negative impact.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-bs-parent="#trustModelRules">
+                        Observation 3: LMMs are better at rejecting questions with unanswerable future dates than those with past dates.
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#trustModelRules">
+                      <div class="accordion-body">
+                        As indicated by P.U.D and F.U.D results in Table 3, most LMMs (except for mPLUG-Owl2-7B) are capable of effectively rejecting questions that contain unanswerable dates from either the past or the future. This is likely because such dates are absent from the training data, allowing the models to reject them with greater confidence. Furthermore, LMMs show a slightly stronger propensity to reject questions with unanswerable future dates, likely because these represent entirely unseen temporal concepts, resulting in even greater refusal certainty. Surprisingly, both Qwen2-VL-I-7B (average CEM score of 99.64) and Qwen2.5-VL-I-7B (average CEM score of 99.70) demonstrate exceptional performance in question refusal, a capability potentially attributable to enhanced defensive mechanisms from their instruction tuning process.
+                      </div>
+                    </div>
+              </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-bs-parent="#trustModelRules">
+                        Observation 4: All LLMs perform terribly on tasks involving implicit temporal concepts.
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#trustModelRules">
+                      <div class="accordion-body">
+                        In the I.T.C column of Table 3, all LLMs perform terribly, with even the top-performing model, Gemini-2.5-Pro, recalling less than 20% of relevant knowledge. This indicates a fundamental deficiency in understanding and utilizing implicit temporal concepts.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" data-bs-parent="#trustModelRules">
+                        Observation 5: Open-source LMMs demonstrate stronger performance on simpler ranking task, whereas closed-source LMMs excel in more complex calculation task.
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#trustModelRules">
+                      <div class="accordion-body">
+                        Unexpectedly, MiniCPM-V2.6-8B and InternVL2.5-8B achieved the highest performance on ranking task, while models such as GPT-4.1 and Doubao-1.5-Vision-Pro scored below 20% in CEM. Figure 5 further illustrates this phenomenon, showing a decline in ranking performance within the Qwen2.5-VL-I series as model size increases <span style="font-family: serif; font-weight: bold;">50.3<sub>(3B)</sub> → 38.9<sub>(7B)</sub> → 11.4<sub>(72B)</sub></span>, potentially due to overthinking. Larger models, despite their enhanced reasoning capabilities, may overcomplicate simple tasks like ranking, leading to reduced effectiveness. In contrast, on more challenging calculation task, closed-source LMMs including Gemini-2.5-Pro and GPT-4.1 demonstrated superior performance.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" data-bs-parent="#trustModelRules">
+                        Observation 6: Current LMMs demonstrate limited adversarial robustness against temporal errors.
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#trustModelRules">
+                      <div class="accordion-body">
+                        According to the A.T.E results in Table 3, models such as Qwen-VL-7B, LLaVA-Next-M-7B , and InternVL2.5-8B fail to correct any prior errors, demonstrating severely limited robustness. Even the top-performing model, Gemini-2.5-Pro, corrects fewer than 40% of errors. These results indicate a significant need for improvement in temporal reasoning robustness across current models.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" data-bs-parent="#trustModelRules">
+                        Observation 7: More recent LMMs exhibit better temporal awareness performance.
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#trustModelRules">
+                      <div class="accordion-body">
+                        Avg. results in Table 3 reveal an approximate trend: more recent LMMs generally achieve superior overall performance, indicating a link between temporal awareness and recency of development.
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                  </div>
+    </section>
+
+
+
+    <section id="exploratory" class="models section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Dynamic Benchmark</h2> -->
+        <h2>Analysis of Exploratory Results</h2>
+
+      </div><!-- End Section Title -->
+      <div class="row justify-content-center" data-aos="fade-up">
+
+        <div class="col-11">
+         <div class="row">
+           <div class="col-12 text-center my-2">
+             <img src="MINED\img\fig4.png" class="img-fluid my-1" alt="" style="width: 100%; height: auto;">
+                  </div>
+           <div class="col-12 text-center my-2">
+             <img src="MINED\img\fig5.png" class="img-fluid my-1" alt="" style="width: 100%; height: auto;">
+           </div>
+           <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-12">
+                <div class="accordion" id="trustModelRulesExp">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOneExp">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneExp" aria-expanded="true" aria-controls="collapseOneExp" data-bs-parent="#trustModelRulesExp">
+                        Exploration 1: Fine-grained Knowledge Types.
+                      </button>
+                    </h2>
+
+                    <div id="collapseOneExp" class="accordion-collapse collapse show" aria-labelledby="headingOneExp" data-bs-parent="#trustModelRulesExp">
+                      <div class="accordion-body">
+                        All LMMs show consistent trends in recalling time-sensitive knowledge across domains. As shown in Figure 4, LMMs perform better on queries related to organization, company, and country leaders, but worse on athletes and competition champions,likely due to the broader coverage of the former in public knowledge sources. Furthermore, closed-source models outperform open-source variants on university president queries, indicating potential discrepancies in their pretraining corpora.
+                      </div>
+                    </div>
+                  </div>
+ 
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwoExp">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoExp" aria-expanded="false" aria-controls="collapseTwoExp" data-bs-parent="#trustModelRulesExp">
+                        Exploration 2: Model Size and Foundation LLM.
+                      </button>
+                    </h2>
+                    <div id="collapseTwoExp" class="accordion-collapse collapse" aria-labelledby="headingTwoExp" data-bs-parent="#trustModelRulesExp">
+                      <div class="accordion-body">
+                        Observing Figure 5, we have the following findings: (1) Larger model sizes generally lead to improved performance on most tasks, except for R.K, P.U.D, F.U.D, and A.T.E. (2) Even with an identical architecture, LMMs exhibit divergent performance when using different foundation LLMs. For instance, while LLaVA-Next-L-8B and LLaVA-Next-M-7B perform poorly on A.T.E task, LLaVA-Next-V-7B achieves a CEM score of 31.2.
+      </div>
+                    </div>
+                  </div>
+ 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+           <div class="col-12 text-center my-5">
+             <img src="MINED\img\tab4_fig6.png" class="img-fluid my-1" alt="" style="width: 100%; height: auto;">
+           </div>
+           <div class="col-12 text-center my-5">
+             <img src="MINED\img\tab5_fig7.png" class="img-fluid my-1" alt="" style="width: 100%; height: auto;">
+           </div>
+      </div>
+    
+         <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4">
+             <div class="col-12">
+               <div class="accordion" id="trustModelRules2">
+                 
+        
+                 <div class="accordion-item">
+                   <h2 class="accordion-header" id="headingThreeExp">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeExp" aria-expanded="false" aria-controls="collapseThreeExp" data-bs-parent="#trustModelRules2">
+                      Exploration 3: Fine-grained Analysis of Time-Agnostic and Temporal Distribution.
+                     </button>
+                   </h2>
+                   <div id="collapseThreeExp" class="accordion-collapse collapse" aria-labelledby="headingThreeExp" data-bs-parent="#trustModelRules2">
+                     <div class="accordion-body">
+                      In the Time-Agnostic task, we further categorize the model's outputs into fine-grained labels. Since Prompt Agreement is adopted, each knowledge yields four outputs. If any output contains the most up-to-date value from the attribute list <span style="font-family: serif; font-weight: bold;">A</span>, it is labeled as <strong>Latest</strong>. If none includes the latest value but at least one contains an outdated answer, it is marked as <strong>Outdated</strong>. All other cases are categorized as <strong>Irrelevant</strong>. In Table 4, open-source models not only produce a limited number of latest responses but also generate a substantial portion of irrelevant responses. In contrast, closed-source models reduce the frequency of irrelevant responses but still exhibit a high proportion of outdated responses. These statistical results indicate that a significant portion of model-generated responses are either outdated or irrelevant, highlighting a pronounced issue of inaccurate time-sensitive knowledge. Figure 6 provides an approximate visualization of the temporal distribution of knowledge within LMMs. Closed-source models demonstrate a broader temporal coverage. In contrast, the internal knowledge of open-source models is concentrated in more recent time periods, indicating a comparative difficulty in recalling information from distant historical contexts.
+                     </div>
+                   </div>
+              </div>
+
+                 <div class="accordion-item">
+                   <h2 class="accordion-header" id="headingFourExp">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourExp" aria-expanded="false" aria-controls="collapseFourExp" data-bs-parent="#trustModelRules2">
+                      Exploration 4: Error analysis of Awareness of Temporal Misalignment.
+                     </button>
+                   </h2>
+                   <div id="collapseFourExp" class="accordion-collapse collapse" aria-labelledby="headingFourExp" data-bs-parent="#trustModelRules2">
+                     <div class="accordion-body">
+                      Table 5 provides a detailed error analysis of awareness experiment. The <span style="border: 1px solid red; background-color: #ffebee; color: red; padding: 2px 4px;">red values</span> in the bracket mean a negative effect, while <span style="border: 1px solid green; background-color: #e8f5e8; color: green; padding: 2px 4px;">green</span> means a positive. <strong>Con.</strong> to context-based answers, <strong>Oth.</strong> to other answers, and <strong>Irr.</strong> to irrelevant ones. Surprisingly, even when provided with relevant context, models still generate responses that are irrelevant to the query or contain incorrect values from attribute list <span style="font-family: serif; font-weight: bold;">A</span>, rather than leveraging the given context. This finding underscores the need to further investigate how models integrate external information with their internal knowledge.
+              </div>
+              </div>   
+              </div>
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+        
+
+    </section>
+
+
+
+    <section id="updating" class="pathway1 section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Updating <b>M</b>ultimodal t<b>I</b>me-se<b>N</b>sitive knowl<b>ED</b>ge</h2>
+      </div>
+    
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="container mt-5">
+            <div class="row"> 
+              <div class="col-12 text-center mb-5">
+                <img src="MINED\img\table6.png" alt="Image 1" class="img-fluid" />
+              </div>
+
+
+              <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                  <div class="col-12">
+                    <div class="accordion" id="trustModelRules2">
+                      
+             
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThreeExp">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeExp" aria-expanded="false" aria-controls="collapseThreeExp" data-bs-parent="#trustModelRules2">
+                            Single Editing Shows Strong Effectiveness.
+                          </button>
+                        </h2>
+                        <div id="collapseThreeExp" class="accordion-collapse collapse" aria-labelledby="headingThreeExp" data-bs-parent="#trustModelRules2">
+                          <div class="accordion-body">
+                            By observing Table 6, we make the following observations: <span style="font-weight: bold;">(1)</span> FT-LLM demonstrates strong performance as a knowledge updating method, achieving superior results across all evaluated tasks. <span style="font-weight: bold;">(2)</span> In contrast, both the SERAC and MINED exhibit comparatively weaker performance, demonstrating limited effectiveness in knowledge updating tasks. <span style="font-weight: bold;">(3)</span> Exception of SERAC, all methods achieve excellent performance on A.T.E task, demonstrating the strong robustness of current knowledge editing approaches. <span style="font-weight: bold;">(4)</span> Knowledge updating significantly enhances the model's performance on complex I.T.C and C.A tasks.
+
+              </div>
+            </div>
+
+                     
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    
+
+              <div class="col-12 text-center my-5" style="margin-top: 4rem !important;">
+                <img src="MINED\img\table7.png" alt="Image 3" class="img-fluid" />
+      </div>
+    
+              <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4">
+                  <div class="col-12">
+                    <div class="accordion" id="trustModelRules2">
+                      
+             
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThreeExp">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeExp" aria-expanded="false" aria-controls="collapseThreeExp" data-bs-parent="#trustModelRules2">
+                            Lifelong Editing Still Needs Improvement.
+                          </button>
+                        </h2>
+                        <div id="collapseThreeExp" class="accordion-collapse collapse" aria-labelledby="headingThreeExp" data-bs-parent="#trustModelRules2">
+                          <div class="accordion-body">
+                            By observing Table 7, we make the following observations: <span style="font-weight: bold;">(1)</span> Except for P.U.D, F.U.D and A.T.E tasks, knowledge updating performance of FT-LLM, FT-VIS and SERAC has experienced varying degrees of loss. <span style="font-weight: bold;">(2)</span> SERAC maintains excellent performance in lifelong editing scenario, with only 10.35% loss. Its memory-based architecture mitigates catastrophic forgetting through explicit caching, maintaining robust performance in lifelong editing. <span style="font-weight: bold;">(3)</span> Performance of SERAC in A.T.E has been improved by 12.55%, which may be due to lifelong editing making SERAC better suited for robustness tasks.
+              </div>
+                        </div>
+              </div>
+   
+
+              </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+    
+
+    <section id="examples" class="examples section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Qualitative Examples</h2>
+      </div>
+    
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="container mt-5">
+            <!-- Bootstrap Carousel -->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+              <div class="carousel-inner">
+                <!-- PDF Examples -->
+                <div class="carousel-item active">
+                  <iframe src="MINED\example\Adversarial Temporal Error.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Calculation.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Future Misaligned Context.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Future Unanswerable Date.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Implicit Temporal Concept.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Past Misaligned Context.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Past Unanswerable Date.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Ranking.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Temporal Interval-Aware.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Time-Agnostic.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="MINED\example\Timestamp-Aware.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100" class="d-block w-100 img-fluid" style="height: 800px; border: none;"></iframe>
+                </div>
+                </div>
+     
+              <!-- 控制按钮 -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+    <section id="templates" class="examples section">
+      <div class="container section-title" data-aos="fade-up">
+          <h2>Chat Templates</h2>
+      </div>
+    
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="container mt-5">
+            <!-- Bootstrap Carousel -->
+            <div id="carouselChatTemplates" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+              <div class="carousel-inner">
+                <!-- Chat Template Images -->
+                <div class="carousel-item active">
+                  <img src="MINED\chat\1.png" alt="Chat Template 1" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\2.png" alt="Chat Template 2" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\3.png" alt="Chat Template 3" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\4.png" alt="Chat Template 4" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\5.png" alt="Chat Template 5" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\6.png" alt="Chat Template 6" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\7.png" alt="Chat Template 7" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\8.png" alt="Chat Template 8" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\9.png" alt="Chat Template 9" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\10.png" alt="Chat Template 10" class="d-block w-100 img-fluid" />
+                </div>
+                <div class="carousel-item">
+                  <img src="MINED\chat\11.png" alt="Chat Template 11" class="d-block w-100 img-fluid" />
+                </div>
+              </div>
+     
+              <!-- 控制按钮 -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselChatTemplates" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselChatTemplates" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .carousel {
+          height: 800px;
+          margin-bottom: 30px;
+        }
+
+        .carousel-inner {
+          height: 100%;
+        }
+
+        .carousel-item {
+          height: 100%;
+        }
+
+        .carousel-item img {
+          height: 100%;
+          object-fit: contain;
+          background-color: #f8f9fa;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+          height: 100%;
+        }
+
+        /* 增加箭头大小 */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          width: 40px;
+          height: 40px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+          width: 10%;
+        }
+
+        .carousel-caption {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      </style>
+    </section>
+    
+    <!-- 引入 Bootstrap 的 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Team</h2>
+      </div>
+      <div class="container">
+        <div class="team-avatars">
+          <a href="https://kailinjiang.github.io/" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE/author/jkl2.png" alt="Person 1">
+            </div>
+            <div class="avatar-name">Kailin Jiang</div>
+            <div class="avatar-info">USTC</div>
+          </a>
+
+          <a href="https://flocrystal.github.io/" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE/author/jiangning.png" alt="Person 3">
+            </div>
+            <div class="avatar-name">Ning Jiang</div>
+            <div class="avatar-info">NEFU</div>
+          </a>
+
+
+          <a href="https://dblp.org/pid/252/7814-1.html" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE/author/renyucheng.png" alt="Person 6">
+            </div>
+            <div class="avatar-name">Yuchen Ren</div>
+            <div class="avatar-info">USYD</div>
+          </a>
+
+          <a href="" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="MINED\author\YuchenLi.png" alt="Person 6">
+            </div>
+            <div class="avatar-name">Yuchen Li</div>
+            <div class="avatar-info">AHPU</div>
+          </a>
+
+
+          <a href="" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="MINED\author\YifanGao.png" alt="Person 6">
+            </div>
+            <div class="avatar-name">Yifan Gao</div>
+            <div class="avatar-info">USTC</div>
+          </a>
+
+          <a href="https://scholar.google.com/citations?hl=en&user=ngCBlN4AAAAJ&view_op=list_works&sortby=pubdate" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE\author\bijinhe.png" alt="Person 5">
+            </div>
+            <div class="avatar-name">Jinhe Bi</div>
+            <div class="avatar-info">LMU Munich</div>
+          </a>
+
+          <a href="https://yunpuma.github.io/" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="MINED\author\mayunpu.png" alt="Person 5">
+            </div>
+            <div class="avatar-name">Yunpu Ma</div>
+            <div class="avatar-info">LMU Munich</div>
+          </a>
+
+          <a href="https://github.com/qingliu22" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="MINED\author\hajimi.png" alt="Person 5">
+            </div>
+            <div class="avatar-name">Qingqing Liu</div>
+            <div class="avatar-info">BIT</div>
+          </a>
+
+          <a href="https://github.com/Lr-2002" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="MINED\author\hajimi.png" alt="Person 5">
+            </div>
+            <div class="avatar-name">Xianhao Wang</div>
+            <div class="avatar-info">USTC</div>
+          </a>
+        
+
+          <a href="https://sdujyf.github.io/" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="MINED\author\jiayifan.png" alt="Person 5">
+            </div>
+            <div class="avatar-name">Yifan Jia</div>
+            <div class="avatar-info">SDU</div>
+          </a>
+
+          
+          <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=OrglpdAAAAAJ&scilu=&scisig=ADIE8skAAAAAZyT8auspm9dah5HKpXi_ScY7hg8&gmla=AL3_zihUVOI1rEGhoQAy-v966dyAKK3rnrnZRPkWvfO5wmBVLD4T8H0FT8mqptp6yPa0AZNISSRWxr7NOw4WCn6f7WPY9iDU9AfKt_4EH0s&sciund=2293288061815271370" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE\author\jianghongbo.png" alt="Person 2">
+            </div>
+            <div class="avatar-name">Hongbo Jiang</div>
+            <div class="avatar-info">XMU-MAC</div>
+          </a>
+
+          <a href="https://cee.ahpu.edu.cn/2023/0918/c2103a200999/page.htm" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="MINED\author\hucongyao.png" alt="Person 5">
+            </div>
+            <div class="avatar-name">Yaocong Hu</div>
+            <div class="avatar-info">AHPU</div>
+          </a>
+
+
+          <a href="http://staff.ustc.edu.cn/~binli/" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE/author/libin.png" alt="Person 7">
+            </div>
+            <div class="avatar-name">Bin Li</div>
+            <div class="avatar-info">USTC</div>
+          </a>
+
+          <a href="https://faculty.ustc.edu.cn/liulei13/zh_CN/index.htm" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE/author/liulei.png" alt="Person 9">
+            </div>
+            <div class="avatar-name">Lei Liu</div>
+            <div class="avatar-info">USTC</div>
+          </a>
+
+          <a href="https://yuntaodu.github.io/" class="avatar-link">
+            <div class="avatar-circle">
+              <img src="KORE/author/duyuntao.png" alt="Person 8">
+            </div>
+            <div class="avatar-name">Yuntao Du</div>
+            <div class="avatar-info">SDU</div>
+          </a>
+        </div>
+      </div>
+
+      <style>
+        .team-avatars {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr); /* 8列的网格，第一行填满8个 */
+          gap: 20px;
+          padding: 20px;
+          width: 100%;
+          height: auto;
+          max-width: 1260px; /* 调整为容纳8个头像的宽度 */
+          margin: 0 auto;
+        }
+
+        .avatar-link {
+          text-decoration: none;
+          transition: transform 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: inherit;
+          justify-self: center; /* Grid居中 */
+        }
+
+        /* 第二行（第9-15个）居中显示 */
+        .avatar-link:nth-child(n+9):nth-child(-n+15) {
+          grid-column: span 1;
+        }
+
+        /* 让第二行的7个元素在8列网格中实现两端对齐 */
+        .avatar-link:nth-child(9) { grid-column: 1; }
+        .avatar-link:nth-child(10) { grid-column: 2; }
+        .avatar-link:nth-child(11) { grid-column: 3; }
+        .avatar-link:nth-child(12) { grid-column: 4; }
+        .avatar-link:nth-child(13) { grid-column: 5; }
+        .avatar-link:nth-child(14) { grid-column: 7; }
+        .avatar-link:nth-child(15) { grid-column: 8; }
+
+        .avatar-link:hover {
+          transform: scale(1.1);
+        }
+
+        .avatar-circle {
+          width: 122px;
+          height: 122px;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 3px solid #fff;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          flex-shrink: 0; /* 防止头像被压缩 */
+        }
+
+        .avatar-circle img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .avatar-name {
+          font-size: 14px;
+          text-align: center;
+          color: #333;
+          margin-top: 8px;
+          font-weight: 500;
+          height: 20px; /* 固定名字高度 */
+          line-height: 20px; /* 确保文字垂直居中 */
+        }
+
+        .avatar-info {
+          font-size: 12px;
+          text-align: center;
+          color: #666;
+          margin-top: 4px;
+          height: 16px; /* 固定信息高度 */
+          line-height: 16px; /* 确保文字垂直居中 */
+        }
+
+        /* 响应式设计 - Grid布局的响应式 */
+        @media (max-width: 1024px) {
+          .team-avatars {
+            grid-template-columns: repeat(7, 1fr); /* 7列 */
+            max-width: 980px;
+          }
+          /* 重置第二行的列位置 */
+          .avatar-link:nth-child(9) { grid-column: 1; }
+          .avatar-link:nth-child(10) { grid-column: 2; }
+          .avatar-link:nth-child(11) { grid-column: 3; }
+          .avatar-link:nth-child(12) { grid-column: 4; }
+          .avatar-link:nth-child(13) { grid-column: 5; }
+          .avatar-link:nth-child(14) { grid-column: 6; }
+          .avatar-link:nth-child(15) { grid-column: 7; }
+        }
+
+        @media (max-width: 768px) {
+          .team-avatars {
+            grid-template-columns: repeat(6, 1fr); /* 6列 */
+            max-width: 840px;
+          }
+          .avatar-circle {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .team-avatars {
+            grid-template-columns: repeat(4, 1fr); /* 4列 */
+            max-width: 560px;
+          }
+          .avatar-circle {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+        @media (max-width: 400px) {
+          .team-avatars {
+            grid-template-columns: repeat(3, 1fr); /* 3列 */
+            max-width: 420px;
+          }
+          .avatar-circle {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      </style>
+
+    </section><!-- /Clients Section -->
+
+    <div class="container section-title" data-aos="fade-up">
+      <h2>BibTeX</h2>
+    </div>
+  <!-- 新增 BibTeX 栏目 -->
+<!-- 新增 BibTeX 栏目 -->
+<div class="team-bibtex" style="max-width: 950px; margin: 32px auto 50px auto; background: #f8f9fa; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px; position: relative;">
+  <!-- Copy按钮 -->
+
+
+
+  <button id="copy-bibtex" style="position: absolute; top: 15px; right: 15px; background: #2E7D32; color: white; border: 1px solid #A5D6A7; border-radius: 6px; padding: 8px 12px; font-size: 12px; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: background-color 0.3s;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+      <path d="m5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </svg>
+    Copy
+  </button>
+  
+  <!-- 代码容器 -->
+  <div style="background: white; border-radius: 6px; padding: 20px; margin-top: 40px; overflow-x: auto; border: 1px solid #e5e7eb;">
+    <pre id="bibtex-content" style="font-size: 14px; color: #333; background: none; border: none; margin: 0; padding: 0; font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace; white-space: pre; word-break: normal; min-width: max-content;">@article{jiang2025mined,
+  title = {MINED: Probing and Updating with Multimodal Time-Sensitive Knowledge for Large Multimodal Models},
+  author={Jiang, Kailin and Jiang, Ning and Ren, Yuchen and Li, Yuchen and Gao, Yifan and Bi, Jinhe and Ma, Yunpu and Liu, Qingqing and Wang, Xianhao and Jia, Yifan and Jiang, Hongbo and Hu, Yaocong and Li, Bin and Liu, Lei and Du, Yuntao},
+  year = {2025}
+}</pre>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const copyButton = document.getElementById('copy-bibtex');
+  const bibtexContent = document.getElementById('bibtex-content');
+  
+  copyButton.addEventListener('click', async function() {
+    try {
+      await navigator.clipboard.writeText(bibtexContent.textContent);
+      
+      // 临时改变按钮文本和样式
+      const originalText = copyButton.innerHTML;
+      copyButton.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"></polyline></svg>Copied!';
+      copyButton.style.background = '#059652';
+      
+      // 2秒后恢复原状
+      setTimeout(() => {
+        copyButton.innerHTML = originalText;
+        copyButton.style.background = '#8E24AA';
+      }, 2000);
+      
+    } catch (err) {
+      console.error('复制失败:', err);
+      // 降级方案：选中文本
+      const range = document.createRange();
+      range.selectNode(bibtexContent);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      
+      try {
+        document.execCommand('copy');
+        copyButton.innerHTML = 'Copied!';
+        setTimeout(() => {
+          copyButton.innerHTML = 'Copy';
+        }, 2000);
+      } catch (fallbackErr) {
+        alert('复制失败，请手动选择文本复制');
+      }
+    }
+  });
+  
+  // 按钮悬停效果
+  copyButton.addEventListener('mouseenter', function() {
+        this.style.background = '#C8A2DC';
+  });
+  
+  copyButton.addEventListener('mouseleave', function() {
+    if (this.style.background !== '#059652') {
+        this.style.background = '#8E24AA';
+    }
+  });
+});
+</script>
+
+<script>
+// Header scroll effect
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('.header');
+  
+  function handleScroll() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+  
+  window.addEventListener('scroll', handleScroll);
+  
+  // Initial check
+  handleScroll();
+});
+</script>
+  
+
+    <!-- booktitle={The Thirteenth International Conference on Learning Representations}, -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Multimodal tIme-seNsitive knowlEDge</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <!-- General Email Section -->
+            <p style="font-size: 20px;"><strong>General Email:</strong></p>
+            <p style="font-size: 20px;"><span>Kailin Jiang: 
+                      <br>
+                      <span style="color: #F8FAFC; font-weight: bold;">jiangkailin@bigai.ai</span>
+                      <br>
+                      <span style="color: #F8FAFC; font-weight: bold;">kailinjiang@mail.ustc.edu.cn</span>
+                    </span></p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 style="font-size: 20px;">Useful Links</h4>
+          <ul style="font-size: 16px;">
+            <li><i class="bi bi-chevron-right"></i> <a href="">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="">Paper</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="">Slides</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="">Github</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="">Dataset</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p style="color: #F8FAFC;">© <span>Copyright</span> <strong class="px-1 sitename">Multimodal tIme-seNsitive knowlEDge</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/table2.js"></script>
+  <script src="assets/js/anime.js"></script>
+  <script src="anime.min.js"></script>
+   <!-- 使用官方 CDN -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
+
+
+
+</body>
+
+
+
+
+</html>
